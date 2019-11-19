@@ -17,6 +17,10 @@ public class PersonTest {
 
 		// Private는 내부에서만 접근 가능하다.
 		// p.weight; = 100;
+		
+		// 자식생성자와 부모 생성자의 호출 관계
+		
+		Student s = new Student();
 	}
 
 }

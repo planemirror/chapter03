@@ -8,6 +8,11 @@ public class Person {
 	
 	private int weight;
 	
+	public Person()
+	{
+		System.out.println("Person() 호출");
+	}
+	
 	public void info()
 	{
 		weight = 70;

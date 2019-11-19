@@ -10,6 +10,7 @@ public class Goods {
 	private int countStock;
 	private int countSold;
 	
+	// 생성자
 	public Goods(String name, int price, int countStock, int countSold)
 	{
 		this.name = name;
@@ -20,9 +21,11 @@ public class Goods {
 		Goods.count += 1;
 	}
 	
-//	public Goods() {
-//		Goods.count += 1;
-//	}
+	// 생성자 오버로딩
+	public Goods() {
+		Goods.count += 1;
+	}
+	
 	
 	public static void showCount()
 	{

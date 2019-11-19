@@ -8,7 +8,12 @@ public class GoodsApp {
 		// private라 외부에서 접근 불가능
 		// goods.price = 0;
 		
+		// 객체를 생성하는 데 필요한 클래스 정보를 얻어온다 (클래스이름, 메소드정보, 필드정보) : reflection
+		// Class cls = camera.getClass();
+		// System.out.println(cls.getName());
+		
 		Goods camera = new Goods("nikon", 400000, 30, 50);
+		
 		
 		//camera.setName("nikon");
 		// camera.setPrice(400000);
@@ -35,7 +40,7 @@ public class GoodsApp {
 		System.out.println(discountPrice);
 		System.out.println("");
 		
-		//Goods camera2 = new Goods();
+		Goods camera2 = new Goods();
 		//Goods camera3 = new Goods();
 		//Goods camera4 = new Goods();
 		
