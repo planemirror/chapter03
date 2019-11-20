@@ -1,13 +1,15 @@
-package paint;
+package me.planemirror.paint.point;
 
-public class Point {
+import me.planemirror.paint.i.Drawable;
+
+public class Point implements Drawable {
 	
 	private int x;
 	private int y;
 	
 	public Point()
 	{
-		
+		System.out.println("Point() 호출");
 	}
 	
 	public Point(int x, int y)
@@ -29,21 +31,22 @@ public class Point {
 		this.y = y;
 	}
 	
-	public void show()
+	public void draw()
 	{
 		System.out.println("점 [" + x + "," + y +"]을 그렸습니다.");
 	}
 	
-	public void show(boolean visible)
+	public void draw(boolean visible)
 	{
 		if(visible)
 		{
-			show();
+			draw();
 		}
 		else
 		{
 			System.out.println("점 [" + x + "," + y +"]을 지웟습니다.");
 		}
 	}
+	
 	
 }

@@ -1,9 +1,21 @@
-package paint;
+package me.planemirror.paint.point;
 
 public class ColorPoint extends Point {
 	
 	private String color;
 
+	public ColorPoint ()
+	{
+	}
+	
+	public ColorPoint (int x, int y, String color)
+	{
+		super(x,y);
+//		setX(x);
+//		setY(y);
+		this.color = color;
+	}
+	
 	public String getColor() {
 		return color;
 	}
@@ -13,17 +25,17 @@ public class ColorPoint extends Point {
 	}
 
 	@Override
-	public void show() {
+	public void draw() {
 		
 		System.out.println("점 [" + getX() + "," + getY() + ", color = " + color + "]을 그렸습니다.");
 		
 	}
 
 	@Override
-	public void show(boolean visible) {
+	public void draw(boolean visible) {
 		if(visible)
 		{
-			show();
+			draw();
 		}
 		else
 		{
